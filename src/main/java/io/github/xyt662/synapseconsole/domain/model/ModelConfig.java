@@ -2,7 +2,11 @@ package io.github.xyt662.synapseconsole.domain.model;
 
 import java.time.LocalDateTime;
 
-/** 模型配置（可版本化） */
+/**
+ * 模型配置(可版本化)
+ * @author xyt
+ * @since 1.0.0
+ */
 public class ModelConfig {
     private Long id;
     private String name;

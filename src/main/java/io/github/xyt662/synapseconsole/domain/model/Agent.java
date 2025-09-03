@@ -5,7 +5,10 @@ import java.util.List;
 
 /**
  * 聚合根：智能体
- * 说明：领域层对象，不直接耦合 ORM 注解；由 Repository 组装/持久化。
+ * 说明：领域层对象，不直接耦合 ORM 注解；由 Repository 组装/持久化
+ * 
+ * @author xyt
+ * @since 1.0.0
  */
 public class Agent {
 
@@ -20,9 +23,15 @@ public class Agent {
     private List<Long> boundToolIds; // 绑定工具ID集合（快照）
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-    private Long version; // 乐观锁版本
+    
+    /**
+     * 乐观锁版本
+     */
+    private Long version;
 
-    /** 激活 */
+    /** 
+     * 激活 
+     */
     public void activate() { /* 规则校验：必须至少绑定一个工具且有模型配置 */ }
     /** 禁用 */
     public void disable() { /* 状态流转校验 */ }
