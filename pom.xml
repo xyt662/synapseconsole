@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>io.github.xyt662</groupId>
-	<artifactId>synapseconsole</artifactId>
+	<artifactId>SynapseConsole</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>synapseconsole</name>
 	<description>Demo project for Spring Boot</description>
@@ -96,12 +96,6 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
-		</dependency>
-
-        <dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version>
 		</dependency>
 
 		<dependency>
